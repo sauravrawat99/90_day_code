@@ -1,0 +1,144 @@
+DSA notes
+
+-------------------------------------------------------------------------------------------------------------------
+
+🧠 PATTERN THINKING FRAMEWORK (DSA GOLD)
+STEP 1️ Pattern ko ROW-wise dekho
+
+Hamesha apne dimag me bolo:
+
+“Har line ek row hai”
+
+Example:
+
+****
+ ***
+  **
+   *
+
+
+Total rows = 4
+👉 Outer loop = 4 baar chalega
+
+for (let row = 1; row <= 4; row++)
+
+step 2 har row me gino kya kya hai 
+usely 2 cheez hote hai 
+
+1 space
+2 star ya number
+
+table bana sakte hai 
+| Row | Spaces | Stars |
+| --- | ------ | ----- |
+| 1   | 0      | 4     |
+| 2   | 1      | 3     |
+| 3   | 2      | 2     |
+| 4   | 3      | 1     |
+ step 3 formula nikalo ya sab kuch clear kar dega 
+row number=i
+total row n
+
+STEP 4️⃣ Spaces pehle, stars baad me
+
+Ye 90% patterns ka rule hai
+
+for (spaces) print " "
+for (stars) print "*"
+
+step 5 Pattern string har row me reset
+for (row) {
+  let pattern = "";
+}
+
+step 6 STEP 6️⃣ Kabhi outer loop ka variable andar mat badlo
+
+🚫 BIGGEST MISTAKE
+
+row--;
+
+
+Outer loop ka kaam sirf:
+
+“Kitni rows print karni hain”
+-----------------------------------------------------------------------
+
+PATTERN FORMULA NIKALNE KA METHOD (DSA GOLD)
+
+STEP 1️⃣ Rows ko number de
+
+Hamesha rows ko 1 se n number do.
+
+Example:
+
+****
+ ***
+  **
+   *
+
+   Row numbers:
+
+Row 1
+Row 2
+Row 3
+Row 4
+
+STEP 2️⃣ Table bana (MOST IMPORTANT STEP)
+
+Code se pehle table likhna habit bana.
+
+| Row (i) | Spaces | Stars |
+| ------- | ------ | ----- |
+| 1       | 0      | 4     |
+| 2       | 1      | 3     |
+| 3       | 2      | 2     |
+| 4       | 3      | 1     |
+
+
+Total rows = n = 4
+
+STEP 3️⃣ Pattern dekh, maths nahi
+
+Khud se pooch:
+
+🔍 Spaces ka pattern
+0, 1, 2, 3
+
+
+👉 Ye directly bol raha hai:
+
+Spaces = i - 1
+Stars ka pattern
+4, 3, 2, 1
+
+
+👉 Ye bol raha hai:
+
+Stars = n - i + 1
+
+STEP 4️⃣ Formula ko test kar
+
+Row = 3
+n = 4
+
+👉 Spaces = 3 - 1 = 2
+👉 Stars = 4 - 3 + 1 = 2
+
+Match? ✅
+Formula correct 👍
+
+STEP 5️⃣ Code me convert kar
+for (let i = 1; i <= n; i++) {
+  let line = "";
+
+  for (let s = 0; s < i - 1; s++) {
+    line += " ";
+  }
+
+  for (let st = 0; st < n - i + 1; st++) {
+    line += "*";
+  }
+
+  console.log(line);
+}
+----------------------------------------------------------------------------------
