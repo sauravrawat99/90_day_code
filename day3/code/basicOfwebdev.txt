@@ -1,0 +1,59 @@
+how does the internet work?
+=>The internet is a global network of interconnected computers that communicate with each other using standardized protocols.
+ It allows for the transfer of data and information across vast distances almost instantaneously.
+
+ 2️⃣ Client & Server (Basic idea)
+Client 👉 aapka device (mobile/laptop)
+Server 👉 jahan website ka data rakha hota hai
+
+🗣️ Example:
+Aap bolte ho: “Mujhe google.com chahiye”
+Server bolta hai: “Ye lo Google ka page”
+
+3️⃣ URL se IP Address (DNS ka kaam)
+Computers names nahi, numbers samajhte hain.
+Aap likhte ho: www.google.com
+DNS (Domain Name System) isse convert karta hai 👉 142.250.xxx.xxx (IP address)
+🧠 DNS = Internet ka Phonebook
+
+4️⃣ Request & Response (HTTP/HTTPS)
+Browser request bhejta hai (HTTP/HTTPS)
+Server response bhejta hai (HTML, CSS, JS, Images)
+🔒 HTTPS = Secure (data encrypted hota hai)
+
+5️⃣ Data ka safar (Packets)
+Data ek saath nahi jata, chhote-chhote tukdon me jata hai jise packets kehte hain.
+Packets alag-alag routes se ja sakte hain
+Destination par dobara jud jaate hain
+🧩 Puzzle pieces jaisa samjho
+
+6️⃣ Internet infrastructure
+Cables (undersea cables bhi!)
+Routers (traffic police)
+ISPs (Jio, Airtel, etc.)
+Data Centers (servers ka ghar)
+
+7️⃣ Page ka render hona
+
+Server se data aane ke baad:
+HTML → structure
+CSS → design
+JavaScript → interaction
+Browser in sab ko mila kar page dikhata hai.
+
+
+----------------------------------------------------------------------------------
+HTML
+=> HyperText Markup Language
+
+   <!DOCTYPE html>
+<html>
+  <head>
+    <title>My First Website</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>This is my first HTML page.</p>
+  </body>
+</html>
+----------------------------------------------------------------------------------
