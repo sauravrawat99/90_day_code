@@ -1,0 +1,37 @@
+console.log("saurav");
+// console.log ke through hum kuch bhi print kar sakte hai
+
+process.stdout.write("hello world");
+// process use karke hum bina new line ke print kar sakte hai
+
+console.table(["saurav", "kumar", "singh"]);
+// console.table ke through hum array or object ko table format me print kar sakte hai
+
+console
+// console ke through hum bahut saare methods use kar sakte hai jaise console.error,
+//  console.warn, console.info etc.
+
+// data type in js TWO types 
+// Primitive data types
+// 1. string
+// 2. number
+// 3. boolean
+// 4. bigint
+// 5. undefined
+// 6. null
+// 7. symbol
+// 8. object
+// 9. array
+
+nonpramitive data types
+// 1. object
+// 2. array
+// 3. function
+// 4. date
+// 5. regex
+// 6. map
+// 7. set
+
+// Primitive data types are immutable
+
+
