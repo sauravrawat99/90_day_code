@@ -1,0 +1,123 @@
+🧠 LOGIC KAISE BANTI HAI? (DSA METHOD)
+❌ Galat tareeqa (jo tu shayad kar raha hai)
+
+Question dekha
+
+Code dekh liya
+
+Yaad karne ki koshish
+
+Agla question → fir blank 😵‍💫
+
+✅ Sahi tareeqa (ab se ye follow karega)
+🔥 RULE 1: CODE SE PEHLE SOCHNA (MANDATORY)
+
+Har question me ye 5 sawal likhna hai (paper ya mind me)
+
+1️⃣ Input kya hai?
+2️⃣ Output kya chahiye?
+3️⃣ Kitni baar loop chalana padega?
+4️⃣ Answer kis variable me store hoga?
+5️⃣ Kab update hoga answer?
+
+🧩 Example 1: Reverse Array
+❓ Question:
+
+[1,2,3,4] → [4,3,2,1]
+
+🧠 Logic Thinking:
+
+1️⃣ input = array
+2️⃣ output = same array reversed
+3️⃣ loop = half array
+4️⃣ variables = start, end
+5️⃣ update = swap
+
+✍️ Pseudo Logic (NO CODE YET)
+start = 0
+end = last index
+
+jab tak start < end
+swap
+start++
+end--
+
+✅ Ab code likhna EASY ho jata hai
+let arr = [1,2,3,4];
+let i = 0;
+let j = arr.length - 1;
+
+while (i < j) {
+  [arr[i], arr[j]] = [arr[j], arr[i]];
+  i++;
+  j--;
+}
+console.log(arr);
+
+🧩 Example 2: Maximum Subarray (Simple Way)
+❓ Input:
+
+[-2,1,-3,4]
+
+🧠 Soch:
+
+Har subarray ka sum nikalna
+
+Max ko store karna
+
+✍️ Logic:
+max = -infinity
+outer loop i
+inner loop j
+sum = 0
+update max
+
+Code:
+let nums = [-2,1,-3,4];
+let max = -Infinity;
+
+for (let i = 0; i < nums.length; i++) {
+  let sum = 0;
+  for (let j = i; j < nums.length; j++) {
+    sum += nums[j];
+    if (sum > max) max = sum;
+  }
+}
+console.log(max);
+
+
+🔥 Ye brute force hai, par logic yahin se banti hai
+
+🧠 RULE 2: PEHLE BRUTE FORCE = BOSS MOVE
+
+❌ Log bolte hain: “Optimized karo”
+✅ Tu bole: “pehle samjho”
+
+👉 90% log brute force skip kar dete hain
+👉 isi liye unki logic weak rehti hai
+
+🧠 RULE 3: VARIABLE SE DOSTI KAR
+
+Har variable ka role likh:
+
+let max = -Infinity; // answer
+let sum = 0;        // current window
+
+
+👉 Agar tu bata nahi sakta variable kya karta hai
+👉 to logic clear nahi hai
+
+🧪 DAILY LOGIC PRACTICE (15–20 min)
+Roz ye 3 kaam:
+
+1️⃣ Question ko Hindi me bol
+2️⃣ Pseudo code likh
+3️⃣ 1 example ka dry run
+
+🛠️ Aaj ka REAL TASK (SMALL)
+Sirf 2 questions:
+
+1️⃣ Reverse Array
+2️⃣ Move Zeroes
+
+❌ koi aur question nahi
