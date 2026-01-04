@@ -1,0 +1,151 @@
+🔁 1️⃣ Spiral Matrix – FULL DRY RUN (4×4)
+Matrix
+matrix = [
+ [ 1,  2,  3,  4],
+ [ 5,  6,  7,  8],
+ [ 9, 10, 11, 12],
+ [13, 14, 15, 16]
+]
+
+🔹 Initial Values
+top = 0
+bottom = 3
+left = 0
+right = 3
+result = []
+
+🔁 ROUND 1
+1️⃣ Left → Right (top row = 0)
+matrix[0][0] → 1
+matrix[0][1] → 2
+matrix[0][2] → 3
+matrix[0][3] → 4
+
+result = [1,2,3,4]
+top = 1
+
+2️⃣ Top → Bottom (right column = 3)
+matrix[1][3] → 8
+matrix[2][3] → 12
+matrix[3][3] → 16
+
+result = [1,2,3,4,8,12,16]
+right = 2
+
+3️⃣ Right → Left (bottom row = 3)
+matrix[3][2] → 15
+matrix[3][1] → 14
+matrix[3][0] → 13
+
+result = [1,2,3,4,8,12,16,15,14,13]
+bottom = 2
+
+4️⃣ Bottom → Top (left column = 0)
+matrix[2][0] → 9
+matrix[1][0] → 5
+
+result = [1,2,3,4,8,12,16,15,14,13,9,5]
+left = 1
+
+🔁 ROUND 2 (Inner Matrix)
+top = 1, bottom = 2, left = 1, right = 2
+
+1️⃣ Left → Right
+6 → 7
+
+2️⃣ Top → Bottom
+11
+
+3️⃣ Right → Left
+10
+
+4️⃣ Bottom → Top
+
+❌ skip (boundary crossed)
+
+✅ FINAL OUTPUT
+[
+  1, 2, 3, 4,
+  8, 12, 16, 15,
+  14, 13, 9, 5,
+  6, 7, 11, 10
+]
+
+📘 2️⃣ Aaj ke DSA SORTING NOTES (EXAM + INTERVIEW)
+🔹 1. Bubble Sort
+
+Idea: Bade element ko bubble ki tarah end me bhejna
+
+for i = 0 → n-1
+ for j = 0 → n-i-1
+  if arr[j] > arr[j+1]
+    swap
+
+
+⏱ Time: O(n²)
+
+🧠 Easy, but slow
+
+👍 Small input ke liye
+
+🔹 2. Selection Sort
+
+Idea: Har round me smallest element uthao aur sahi jagah rakho
+
+for i = 0 → n-1
+ min = i
+ for j = i+1 → n
+  if arr[j] < arr[min]
+    min = j
+ swap
+
+
+⏱ Time: O(n²)
+
+🔄 Swaps kam
+
+❌ Not stable
+
+🔹 3. Insertion Sort
+
+Idea: Cards jaisa sort (left part sorted)
+
+for i = 1 → n-1
+ key = arr[i]
+ j = i-1
+ while j>=0 && arr[j] > key
+  arr[j+1] = arr[j]
+ arr[j+1] = key
+
+
+⏱ Best: O(n)
+
+⏱ Worst: O(n²)
+
+👍 Nearly sorted array ke liye best
+
+🔹 4. Counting Sort (Special)
+
+Idea: Count frequency (NO comparison)
+
+⏱ Time: O(n + k)
+
+❌ Negative numbers ❌
+
+👍 Small range numbers
+
+📊 Quick Comparison Table
+Sort	Time	Stable	Use Case
+Bubble	n²	✅	Learning
+Selection	n²	❌	Swaps kam
+Insertion	n²	✅	Nearly sorted
+Counting	n+k	✅	Small range
+🧠 Interview One-Liners
+
+Spiral Matrix → boundary shrink logic
+
+Insertion Sort → best for nearly sorted array
+
+Selection Sort → minimum swaps
+
+Bubble Sort → slow but simple
