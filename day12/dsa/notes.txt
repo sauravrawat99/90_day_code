@@ -149,3 +149,97 @@ Insertion Sort → best for nearly sorted array
 Selection Sort → minimum swaps
 
 Bubble Sort → slow but simple
+
+Diagonal Matrix – Short Notes
+✅ What is a Diagonal Matrix?
+
+A diagonal matrix ek square matrix hoti hai jisme
+👉 sirf diagonal elements non-zero hote hain
+👉 baaki sab elements 0 hote hain.
+
+📌 Example:
+[ 5  0  0 ]
+[ 0  3  0 ]
+[ 0  0  8 ]
+
+🔹 Types of Diagonals
+1️⃣ Primary Diagonal
+
+Left-top → Right-bottom
+
+Condition: i == j
+
+matrix[i][i]
+
+2️⃣ Secondary Diagonal
+
+Right-top → Left-bottom
+
+Condition: i + j == n - 1
+
+matrix[i][n - 1 - i]
+
+🔹 Diagonal Sum
+✅ Primary Diagonal Sum
+sum += matrix[i][i];
+
+✅ Secondary Diagonal Sum
+sum += matrix[i][n - 1 - i];
+
+🔹 Both Diagonal Sum (Center repeat avoid)
+if (n % 2 !== 0) {
+  sum -= matrix[mid][mid];
+}
+
+🔹 Check Diagonal Matrix
+function isDiagonal(matrix) {
+  for (let i = 0; i < matrix.length; i++) {
+    for (let j = 0; j < matrix.length; j++) {
+      if (i !== j && matrix[i][j] !== 0) {
+        return false;
+      }
+    }
+  }
+  return true;
+}
+
+🔹 Important Conditions (Yaad rakhna 🔥)
+
+✔ Must be square matrix
+
+✔ Only diagonal elements ≠ 0
+
+✔ i ≠ j → value must be 0
+
+🔹 Time & Space Complexity
+
+Time: O(n²)
+
+Space: O(1)
+
+🔹 Interview One-Line Answers
+
+Diagonal element: i == j
+
+Secondary diagonal: i + j == n - 1
+
+Center element: n / 2
+
+Matrix must be: square
+
+🔹 Very Short Summary (Exam)
+
+Diagonal matrix is a square matrix where all non-diagonal elements are zero.
+-------------------------------------------------------------------------------------------------
+
+Short Notes (Exam Ready)
+
+Rows & Columns sorted
+
+Start from top-right
+
+Left if big, down if small
+
+Time: O(n + m)
+
+Space: O(1)

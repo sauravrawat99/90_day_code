@@ -87,3 +87,64 @@ function spiralMatrix(matrix) {
   return result;
 }
 console.log(spiralMatrix(matrix));
+
+// dia gonalsum
+// Matrix ke diagonal elements ka sum.
+// 1️⃣ Primary Diagonal → left-top se right-bottom
+// 2️⃣ Secondary Diagonal → right-top se  left-bottom
+let matrix2 = [
+  [1, 2, 3, 4, 5],
+  [6, 7, 8, 9, 10],
+  [11, 12, 13, 14, 15],
+  [16, 17, 18, 19, 20],
+  [21, 22, 23, 24, 25],
+];
+function diagonalSum(matrix2) {
+  let sum = 0;
+  let primarydi = 0;
+
+  for (let i = 0; i < matrix2.length; i++) {
+    sum += matrix2[i][i];
+    sum += matrix2[i][matrix2.length - 1 - i];
+  }
+  if (matrix2.length % 2 !== 0) {
+    let mid = Math.floor(matrix2.length / 2);
+    console.log(mid);
+    sum -= matrix2[mid][mid];
+  }
+  return sum;
+}
+console.log(diagonalSum(matrix2));
+
+//search in sorted matrix
+// Short Notes (Exam Ready)
+// Rows & Columns sorted
+// Start from top-right
+// Left if big, down if small
+// Time: O(n + m)
+// Space: O(1)
+
+let matrix3 = [
+  [1, 4, 7, 11],
+  [2, 5, 8, 12],
+  [3, 6, 9, 16],
+  [10, 13, 14, 17],
+];
+let target = 17;
+function searchMatrix(matrix3, target) {
+  let row = 0;
+  let col = matrix3[0].length - 1;
+
+  while (row < matrix3.length && col >= 0) {
+    if (matrix3[row][col] === target) {
+      return true;
+    } else if (matrix3[row][col] > target) {
+      col--; // left
+    } else {
+      row++; // down
+    }
+  }
+  return false;
+}
+
+console.log(searchMatrix(matrix3, target)); // true
