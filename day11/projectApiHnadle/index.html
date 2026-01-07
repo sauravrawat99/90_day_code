@@ -3,21 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div id="container">
-      <h1>Weathe App</h1>
+      <h1>Weather App 🌤️</h1>
+
       <div id="inputcontainer">
         <input type="text" id="cityInput" placeholder="Enter city name..." />
         <button id="getWeatherBtn">Get Weather</button>
       </div>
-      <div id="weather" class="hidden">
-        <h2 id="cityName">cityName</h2>
-        <p id="temperature">Temperature: -- °C</p>
-        <p id="description">descrition</p>
+
+      <!-- Weather Card -->
+      <div id="weatherInfo" class="hidden">
+        <div class="top">
+          <h2 id="cityName">City</h2>
+          <img id="weatherIcon" src="" alt="icon" />
+          <p id="mainWeather">Clear</p>
+        </div>
+
+        <div class="temp">
+          <p id="temperature">23°C</p>
+          <p id="feelsLike">Feels like: 22°C</p>
+        </div>
+
+        <div class="grid">
+          <div class="box">🌡 Min: <span id="tempMin">--</span>°C</div>
+          <div class="box">🌡 Max: <span id="tempMax">--</span>°C</div>
+          <div class="box">💨 Wind: <span id="windSpeed">--</span> m/s</div>
+          <div class="box">🧭 Direction: <span id="windDeg">--</span>°</div>
+          <div class="box">👁 Visibility: <span id="visibility">--</span> m</div>
+          <div class="box">☁ Clouds: <span id="clouds">--</span>%</div>
+          <div class="box">🌅 Sunrise: <span id="sunrise">--</span></div>
+          <div class="box">🌇 Sunset: <span id="sunset">--</span></div>
+        </div>
       </div>
+
+      <p id="errorMassage" class="hidden">City not found, please try again.</p>
     </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
