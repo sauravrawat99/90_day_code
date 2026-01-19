@@ -1,0 +1,273 @@
+===============================
+FULL STACK HYBRID ROADMAP 2026
+STACK: JAVA + SPRING BOOT + REACT + MYSQL
+TIME: 3 MONTHS (90 DAYS)
+TARGET ROLE: BACKEND / FULLSTACK DEVELOPER
+===============================
+
+1. FINAL LOCKED TECHNOLOGIES
+----------------------------
+Frontend:
+- HTML, CSS, JavaScript
+- React (Hooks, Routing, Axios)
+- UI: Tailwind CSS / MUI (optional)
+- Charts: Recharts / Chart.js
+
+Backend:
+- Java (Primary Language)
+- Spring Boot (Main Framework)
+- Spring MVC (REST APIs)
+- Spring Data JPA (ORM)
+- Hibernate (ORM Implementation)
+- Spring Security + JWT (Auth)
+
+Database:
+- MySQL (Primary DB)
+
+Deployment:
+- React → Vercel / Netlify
+- Backend → Render / Railway / AWS
+- DB → Railway / AWS RDS / Local initially
+
+Extras:
+- Git + GitHub
+- Postman
+- Swagger API Docs
+
+Interview Add-ons:
+- DSA (Java)
+- CS Fundamentals (OS/DBMS/CN)
+- System Design (Lite)
+- Agile + SDLC
+
+
+2. PROJECTS (TOP 2 LOCKED)
+--------------------------
+Project 1 (Major): SaaS Task/CRM System
+Project 2 (Minor): Trading Dashboard
+
+Reason:
+- High demand (SaaS + Fintech)
+- Backend complexity strong
+- Resume impact high
+- Interview explanation easy
+
+
+3. MAJOR PROJECT - SaaS CRM FEATURES
+------------------------------------
+Modules:
+- Auth (JWT)
+- RBAC (Admin/Manager/User)
+- Projects
+- Tasks
+- Comments
+- Teams
+- Pagination
+- Filters (status, priority, user)
+- Audit logs
+- Analytics Dashboard
+- Optional: Billing + Subscription
+
+Entities:
+User
+Team
+Project
+Task
+Comment
+
+User Roles:
+ADMIN, MANAGER, USER
+
+API Examples:
+POST /auth/register
+POST /auth/login
+GET  /users/me
+POST /projects
+GET  /projects?page=1&status=active
+POST /tasks
+GET  /tasks?assignedTo=user
+GET  /analytics/overview
+
+Frontend:
+- Login / Signup
+- Protected routes
+- Dashboard
+- Admin panel
+- Task boards (kanban style)
+- Charts + Analytics
+
+DB: MySQL
+ORM: Hibernate / JPA
+
+
+4. MINOR PROJECT - Trading Dashboard
+-------------------------------------
+Features:
+- Watchlist
+- Market data (historical API)
+- Charts (candles, line, area)
+- Portfolio simulation (optional)
+- Gain/Loss analytics
+
+Libraries:
+- Recharts / TradingView chart widget
+
+Data:
+- Alphavantage / Finnhub / Polygon
+
+
+5. 3-MONTH EXECUTION PLAN
+-------------------------
+MONTH 1:
+- Core Java + Collections
+- Spring Boot Basics
+- REST APIs
+- JPA + Hibernate
+- MySQL Integration
+- JWT + Spring Security
+
+MONTH 2:
+- React Refresh
+- Fullstack Integration
+- SaaS CRM Core Features
+- Analytics Module
+- Deployment (Frontend + Backend + DB)
+
+MONTH 3:
+- Trading Dashboard
+- Resume + GitHub + Swagger Docs
+- DSA (Java, daily)
+- CS Fundamentals
+- System Design Lite
+- Apply for Jobs + Mock Interviews
+
+
+6. DAILY TIME SPLIT (8 hours)
+-----------------------------
+2 hr → Spring Boot + Java
+1 hr → React
+1 hr → Database
+1 hr → Fullstack integration
+1 hr → DSA (Java)
+1 hr → CS Fundamentals
+1 hr → Revision + Notes
+
+
+7. DSA TOPICS (Java)
+---------------------
+1. Arrays
+2. Strings
+3. Hashing (Map/Set)
+4. Two Pointers
+5. Sliding Window
+6. Trees (Basic)
+7. Graph (Basics)
+8. DP (Starter)
+
+Platforms:
+- LeetCode
+- HackerRank
+
+
+8. CS FUNDAMENTALS
+-------------------
+DBMS:
+- Joins
+- ACID
+- Indexing
+- Transactions
+- Normalization
+- Locks
+
+OS:
+- Process vs Thread
+- Scheduling
+- Deadlocks
+- Memory mgmt
+
+CN:
+- HTTP/HTTPS
+- TCP/UDP
+- DNS
+- TLS
+- REST vs WebSocket
+
+SDLC:
+- Agile
+- Scrum
+- Versioning
+
+
+9. SYSTEM DESIGN LITE
+----------------------
+Concepts:
+- REST
+- Scaling Vertical/Horizontal
+- Load Balancer
+- Caching
+- Queues
+- CDN
+- Sharding
+- Replication
+- Rate limiting
+
+
+10. TOOLING
+-----------
+- Git/GitHub
+- Postman
+- Swagger
+- Docker (optional)
+- Jira (optional)
+
+
+11. FINAL OUTCOMES AFTER 3 MONTH
+--------------------------------
+You will have:
+✔ Java (Strong)
+✔ Spring Boot Backend
+✔ Hibernate + MySQL
+✔ React Frontend
+✔ JWT Auth System
+✔ Fullstack SaaS CRM
+✔ Trading Dashboard
+✔ Deployment + Cloud
+✔ Swagger Docs
+✔ GitHub Portfolio
+✔ Resume Ready
+✔ DSA Confidence
+✔ CS Fundamentals
+✔ Job Application Strategy
+
+
+12. JOB ROLES TARGET
+---------------------
+- Backend Developer (Java)
+- Spring Boot Developer
+- Full Stack Developer (Java + React)
+- Software Engineer
+- Microservices Developer (optional future)
+- Java Developer
+
+
+13. SALARY EXPECTATION (2026-2027)
+----------------------------------
+Service-Based: ₹5LPA – ₹12LPA
+Product-Based: ₹10LPA – ₹22LPA
+Remote Startup: ₹15LPA – ₹30LPA
+
+
+14. AFTER JOB (Future Expansion)
+--------------------------------
+- Microservices
+- Kafka
+- Docker + Kubernetes
+- Redis
+- GraphQL
+- AWS Solutions Architect
+- System Design Deep
+
+
+===============================
+END OF ROADMAP (FINAL LOCKED)
+===============================

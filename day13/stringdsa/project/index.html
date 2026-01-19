@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Shopping Cart</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Mini E-Commerce</h1>
+
+      <!-- Products -->
+      <section class="products">
+        <h2>Products</h2>
+        <div id="productList" class="product-list">
+          <!-- JS will load products here -->
+        </div>
+      </section>
+
+      <!-- Cart -->
+      <section class="cart">
+        <h2>Shopping Cart</h2>
+        <div id="cartList" class="cart-list">
+          <p class="empty">Your cart is empty</p>
+        </div>
+
+        <div id="cartTotal" class="cart-total hidden">
+          <p>Total: ₹<span id="totalPrice">0</span></p>
+          <button id="checkoutBtn">Checkout</button>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
